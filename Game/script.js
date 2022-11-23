@@ -1,7 +1,5 @@
 const requestUrl = 'https://jsonplaceholder.typicode.com/posts'
 
-
-
 function radik()
 {
     var radik_check;
@@ -44,7 +42,25 @@ function radik()
 
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
 
 
 

@@ -4,46 +4,52 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
 
-    <div class = "header">
-    <p>Game</p>
-    </div>
+    <div class = "header"> Game Tic Tac Toe </div>
+
 
 
     <div class = "choice">
-        <input type = "radio" name = "r1" value = "1">Легко
-        <input type = "radio" name = "r1" value = "2">Средне
-        <button onclick="radik()">Начать</button>
+        <input class="easy" type = "radio" name = "r1" >Легко<div class="r1"></div>
+        <input class="middle" type = "radio" name = "r1" >Средне<div class="r2"></div>
+
+       <!-- <input class="three" type = "radio" name = "r2" value = "1">3x3<div class="r"></div>
+        <input class="five" type = "radio" name = "r2" value = "2">5x5<div class="r"></div>
+        <input class="seven" type = "radio" name = "r2" value = "3">7x7<div class="r"></div>-->
+
+        <!--<button class="startgame" onclick="radik()">Начать</button>-->
+    </div>
+
+
+<!--    <div class="levelCommon">
+        <button class = "levelOne" onclick="initOne(9)" value="1"> 3x3 </button>
+        <button class = "levelTwo" onclick="initOne(25)" value="2"> 5x5 </button>
+        <button class = "levelThree" onclick="initOne(49)" value="3"> 7x7 </button>
+    </div>-->
+
+    <div class = "lvl">
+        <input class="three" type = "radio" name = "r2" value = "3">3x3<div class="r"></div>
+        <input class="three" type = "radio" name = "r2" value = "5">5x5<div class="r"></div>
+        <input class="three" type = "radio" name = "r2" value = "7">7x7<div class="r"></div>
+        <button class="start" onclick="initOne(c); radik()">Применить</button>
     </div>
 
 
 
 
+    <script src="level.js"></script>
 </head>
 <body>
 
 
+<div class="content">
+    <div id="area"></div>
+</div>
 
-
-<table id = "field" class = "current_x">
-    <tr>
-        <td><input type="text" hidden id="1"><span class="field"></span></td>
-        <td><input type="text" hidden id="2"><span class="field"></span></td>
-        <td><input type="text" hidden id="3"><span class="field"></span></td>
-    </tr>
-    <tr>
-        <td><input type="text" hidden id="4"><span class="field"></span></td>
-        <td><input type="text" hidden id="5"><span class="field"></span></td>
-        <td><input type="text" hidden id="6"><span class="field"></span></td>
-    </tr>
-    <tr>
-        <td><input type="text" hidden id="7"><span class="field"></span></td>
-        <td><input type="text" hidden id="8"><span class="field"></span></td>
-        <td><input type="text" hidden id="9"><span class="field"></span></td>
-    </tr>
-</table>
 
 
 <script src="script.js"></script>
+<script src="level.js"></script>
+
 </body>
 </html>
 
