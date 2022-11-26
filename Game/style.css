@@ -200,4 +200,21 @@ li{
     background-color: #F1F1F1;
 }
 
+.lvl{
+display: flex;
+justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.start{
+margin-top: 40px;
+position: absolute;
+}
+
+.content{
+padding-top: 40px
+}
+
 
