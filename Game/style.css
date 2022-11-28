@@ -13,22 +13,9 @@
     background-color: black;
 }
 /*Выбор сложности*/
-.choice{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0px 10px 0px;
-    font-size: 25px;
-    font-weight: bold;
-    margin-right: 10px;
-    font-family: sans-serif;
-}
+
 /*отступы*/
-.r1{
-    width:10px;
-}
-.r2{
-    width:10px;
-}
+
 
 /*Старт*/
 .startgame{
@@ -200,21 +187,164 @@ li{
     background-color: #F1F1F1;
 }
 
-.lvl{
-display: flex;
-justify-content: center;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: sans-serif;
-}
 
 .start{
-margin-top: 40px;
+margin-top: 59px;
 position: absolute;
+    border-radius: 6px;
+    background: #454857;
+
+    cursor: pointer;
+    border: 0px;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-shadow: inset 0 0 0 3px rgb(35 33 45 / 30%), 0 0 0 3px rgb(185 185 185 / 30%);
+    font-size: 20px;
+    color: #bdbdbdbd;
 }
 
 .content{
-padding-top: 40px
+    padding-top: 40px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
+.lvl{
+    display: inline-flex;
+    justify-content: center;
+    background: #454857;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 3px rgba(35, 33, 45, 0.3),
+    0 0 0 3px rgba(185, 185, 185, 0.3);
+
+
+    padding-bottom: 7px;
+}
+
+.lvl input {
+    width: auto;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px 8px;
+    background: #454857;
+    color: #bdbdbdbd;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: all 100ms linear;
+}
+
+.lvl input:checked {
+    background-image: linear-gradient(180deg, #95d891, #74bbad);
+    color: #fff;
+    box-shadow: 0 1px 1px #0000002e;
+    text-shadow: 0 1px 0px #79485f7a;
+}
+
+.lvl input:before {
+    content: attr(label);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.lvl_top{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+
+
+.choice{
+    display: inline-flex;
+    justify-content: center;
+    background: #454857;
+    padding: 4px;
+
+    box-shadow: inset 0 0 0 3px rgba(35, 33, 45, 0.3),
+    0 0 0 3px rgba(185, 185, 185, 0.3);
+
+    border-radius: 10px;
+    padding-bottom: 7px;
+}
+
+
+.choice input {
+    width: auto;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px 8px;
+    background: #454857;
+    color: #bdbdbdbd;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: all 100ms linear;
+}
+
+
+.choice input:checked {
+    background-image: linear-gradient(180deg, #95d891, #74bbad);
+    color: #fff;
+    box-shadow: 0 1px 1px #0000002e;
+    text-shadow: 0 1px 0px #79485f7a;
+}
+
+.choice input:before {
+    content: attr(label);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.choice_top{
+    display: flex;
+    justify-content: center;
+}
+
+
+.three{
+    margin-top: 7px;
+    margin-left: 7px;
+    border-radius: 6px;
+}
+
+.three_one{
+    margin-top: 7px;
+    border-radius: 6px;
+
+}
+
+.three_two{
+    margin-top: 7px;
+    margin-right: 7px;
+    border-radius: 6px;
+
+}
+.easy_one{
+
+    margin-left: 3px;
+}
+
+
+
 
 
